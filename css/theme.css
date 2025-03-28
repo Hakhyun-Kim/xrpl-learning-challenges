@@ -1,0 +1,141 @@
+/* Theme variables */
+:root {
+    /* Primary colors */
+    --color-primary: #25A768;
+    --color-primary-light: #2FCA7B;
+    --color-primary-dark: #1D8050;
+    
+    /* Secondary colors */
+    --color-secondary: #336699;
+    --color-secondary-light: #4477AA;
+    --color-secondary-dark: #255588;
+    
+    /* XRPL colors */
+    --color-xrpl: #25A768;
+    --color-xrpl-light: #2FCA7B;
+    --color-xrpl-dark: #1D8050;
+    
+    /* Neutral colors */
+    --color-white: #FFFFFF;
+    --color-light: #F8F9FA;
+    --color-light-gray: #E9ECEF;
+    --color-gray: #CED4DA;
+    --color-dark-gray: #6C757D;
+    --color-dark: #343A40;
+    --color-black: #212529;
+    
+    /* Status colors */
+    --color-success: #28A745;
+    --color-warning: #FFC107;
+    --color-error: #DC3545;
+    --color-info: #17A2B8;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    
+    /* Border radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-xxl: 48px;
+    
+    /* Fonts */
+    --font-family: 'Segoe UI', Tahoma, system-ui, -apple-system, sans-serif;
+    --font-family-mono: 'Consolas', 'Monaco', 'Courier New', monospace;
+    
+    /* Font weights */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    
+    /* Font sizes */
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 24px;
+    --font-size-xxl: 32px;
+    
+    /* Line heights */
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-loose: 1.8;
+    
+    /* Animation */
+    --transition-fast: 0.2s;
+    --transition-normal: 0.3s;
+    --transition-slow: 0.5s;
+    
+    /* Layout */
+    --container-max-width: 1200px;
+    --header-height: 60px;
+    
+    /* Z-index layers */
+    --z-index-dropdown: 100;
+    --z-index-sticky: 200;
+    --z-index-modal: 300;
+    --z-index-popup: 400;
+}
+
+/* Dark theme */
+.dark-theme {
+    --color-white: #212529;
+    --color-light: #343A40;
+    --color-light-gray: #495057;
+    --color-gray: #6C757D;
+    --color-dark-gray: #ADB5BD;
+    --color-dark: #E9ECEF;
+    --color-black: #F8F9FA;
+    
+    --color-primary: #2FCA7B;
+    --color-primary-dark: #25A768;
+    --color-primary-light: #3FDB8B;
+    
+    --color-secondary: #4477AA;
+    --color-secondary-dark: #336699;
+    --color-secondary-light: #5588BB;
+    
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3);
+    
+    /* CodeMirror theme for dark mode */
+    --cm-background: #2D3748;
+    --cm-foreground: #E2E8F0;
+    --cm-selection: #4A5568;
+    --cm-cursor: #E2E8F0;
+    --cm-line-numbers: #718096;
+    --cm-comment: #718096;
+    --cm-keyword: #63B3ED;
+    --cm-string: #68D391;
+    --cm-variable: #F6AD55;
+    --cm-property: #4FD1C5;
+    --cm-function: #F687B3;
+    --cm-constant: #B794F4;
+}
+
+/* Light theme (default) */
+:root:not(.dark-theme) {
+    /* CodeMirror theme for light mode */
+    --cm-background: #FFFFFF;
+    --cm-foreground: #1A202C;
+    --cm-selection: #E2E8F0;
+    --cm-cursor: #1A202C;
+    --cm-line-numbers: #A0AEC0;
+    --cm-comment: #718096;
+    --cm-keyword: #3182CE;
+    --cm-string: #38A169;
+    --cm-variable: #DD6B20;
+    --cm-property: #319795;
+    --cm-function: #D53F8C;
+    --cm-constant: #805AD5;
+}
